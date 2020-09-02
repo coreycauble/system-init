@@ -95,14 +95,14 @@ install_devtools() {
     sudo dpkg -i packages-microsoft-prod.deb
     sudo add-apt-repository universe --yes
     sudo apt-get update
-    sudo apt-get install dotnet-sdk-2.2 dotnet-sdk-3.1 -y
+    ## sudo apt-get install dotnet-sdk-2.2 dotnet-sdk-3.1 -y
     
-    read -p "Install .NET Preview SDK? (Y/n)" -n 1 -r
-    echo
-    if [[ $REPLY =~ ^[Yy]$ ]]
-    then
+    ##read -p "Install .NET Preview SDK? (Y/n)" -n 1 -r
+    ##echo
+    ##if [[ $REPLY =~ ^[Yy]$ ]]
+    ##then
         sudo docker pull mcr.microsoft.com/dotnet/core/5.0.100-preview
-    fi
+    ##fi
 
     ## go
     read -p "Install Golang? (Y/n)" -n 1 -r

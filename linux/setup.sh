@@ -138,7 +138,7 @@ mkdir -p ~/code/github
 
 install_git
 install_shell
-install_devtools
+### install_devtools
 install_docker
 
 rm -rf $tmpDir
